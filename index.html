@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WhatsApp Web Clone</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Sidebar com lista de conversas -->
+        <div class="sidebar">
+            <!-- Header da sidebar -->
+            <div class="sidebar-header">
+                <div class="user-profile">
+                    <img src="https://via.placeholder.com/40x40/25D366/ffffff?text=U" alt="Perfil" class="profile-pic">
+                    <span class="username">Meu Perfil</span>
+                </div>
+                <div class="header-actions">
+                    <button class="icon-btn"><i class="fas fa-circle-notch"></i></button>
+                    <button class="icon-btn"><i class="fas fa-message"></i></button>
+                    <button class="icon-btn"><i class="fas fa-ellipsis-v"></i></button>
+                </div>
+            </div>
+
+            <!-- Barra de pesquisa -->
+            <div class="search-container">
+                <div class="search-box">
+                    <i class="fas fa-search search-icon"></i>
+                    <input type="text" placeholder="Pesquisar ou começar uma nova conversa" class="search-input">
+                </div>
+                <button class="icon-btn"><i class="fas fa-filter"></i></button>
+            </div>
+
+            <!-- Lista de conversas -->
+            <div class="conversations-list" id="conversationsList">
+                <!-- Conversas serão adicionadas dinamicamente -->
+            </div>
+        </div>
+
+        <!-- Área principal de chat -->
+        <div class="chat-area">
+            <!-- Header do chat -->
+            <div class="chat-header">
+                <div class="chat-contact">
+                    <img src="https://via.placeholder.com/40x40/128C7E/ffffff?text=C" alt="Contato" class="contact-pic">
+                    <div class="contact-info">
+                        <span class="contact-name">Selecione uma conversa</span>
+                        <span class="contact-status">online</span>
+                    </div>
+                </div>
+                <div class="chat-actions">
+                    <button class="icon-btn"><i class="fas fa-search"></i></button>
+                    <button class="icon-btn"><i class="fas fa-ellipsis-v"></i></button>
+                </div>
+            </div>
+
+            <!-- Área de mensagens -->
+            <div class="messages-container" id="messagesContainer">
+                <div class="welcome-message">
+                    <div class="welcome-icon">
+                        <i class="fab fa-whatsapp"></i>
+                    </div>
+                    <h2>WhatsApp Web</h2>
+                    <p>Envie e receba mensagens sem precisar conectar seu telefone.</p>
+                    <p>Use o WhatsApp em até 4 dispositivos conectados e 1 telefone ao mesmo tempo.</p>
+                </div>
+            </div>
+
+            <!-- Área de input de mensagem -->
+            <div class="message-input-container">
+                <div class="input-actions">
+                    <button class="icon-btn"><i class="far fa-smile"></i></button>
+                    <button class="icon-btn"><i class="fas fa-paperclip"></i></button>
+                </div>
+                <div class="message-input-wrapper">
+                    <input type="text" placeholder="Digite uma mensagem" class="message-input" id="messageInput">
+                </div>
+                <div class="send-actions">
+                    <button class="icon-btn"><i class="fas fa-microphone"></i></button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
