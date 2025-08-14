@@ -458,8 +458,27 @@ function importConversations(file) {
 // Adicionar algumas conversas de exemplo ao carregar
 window.addEventListener('load', function() {
     // Adicionar conversas extras se não existirem
-    if (conversations.length < 5) {
+    if (conversations.length < 7) {
         addNewConversation("Grupo Família", "https://via.placeholder.com/49x49/25D366/ffffff?text=F");
         addNewConversation("Trabalho", "https://via.placeholder.com/49x49/128C7E/ffffff?text=T");
     }
+    
+    // Garantir que as conversas sejam renderizadas
+    renderConversations();
 });
+
+// Função para verificar se tudo está funcionando
+function checkAppStatus() {
+    console.log('WhatsApp Clone Status:');
+    console.log('- Conversas carregadas:', conversations.length);
+    console.log('- Elementos DOM encontrados:', {
+        conversationsList: !!conversationsList,
+        messagesContainer: !!messagesContainer,
+        messageInput: !!messageInput,
+        searchInput: !!searchInput
+    });
+    console.log('- Aplicação pronta!');
+}
+
+// Verificar status após carregamento
+setTimeout(checkAppStatus, 1000);

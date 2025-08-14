@@ -395,6 +395,38 @@ body {
     }
 }
 
+/* Melhorias para garantir funcionamento */
+.app-container {
+    min-height: 100vh;
+    min-width: 100vw;
+}
+
+.conversations-list {
+    min-height: 200px;
+}
+
+.messages-container {
+    min-height: 300px;
+}
+
+/* Garantir que os botões sejam clicáveis */
+.icon-btn {
+    min-width: 40px;
+    min-height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Melhorar visibilidade dos elementos */
+.conversation-item {
+    min-height: 72px;
+}
+
+.message-content {
+    min-width: 60px;
+}
+
 /* Animations */
 @keyframes fadeIn {
     from {
