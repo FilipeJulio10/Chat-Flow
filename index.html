@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WhatsApp Clone</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Sidebar de Contatos -->
+        <div class="sidebar">
+            <!-- Header da Sidebar -->
+            <div class="sidebar-header">
+                <div class="user-profile">
+                    <img src="https://via.placeholder.com/40x40/25D366/ffffff?text=EU" alt="Meu Perfil" class="profile-pic">
+                </div>
+                <div class="header-actions">
+                    <button class="action-btn"><i class="fas fa-circle-notch"></i></button>
+                    <button class="action-btn"><i class="fas fa-message"></i></button>
+                    <button class="action-btn"><i class="fas fa-ellipsis-v"></i></button>
+                </div>
+            </div>
+
+            <!-- Barra de Pesquisa -->
+            <div class="search-container">
+                <div class="search-box">
+                    <i class="fas fa-search search-icon"></i>
+                    <input type="text" placeholder="Pesquisar ou começar uma nova conversa" class="search-input">
+                </div>
+                <button class="filter-btn"><i class="fas fa-filter"></i></button>
+            </div>
+
+            <!-- Lista de Contatos -->
+            <div class="contacts-list">
+                <div class="contact-item active" data-contact="João Silva">
+                    <div class="contact-avatar">
+                        <img src="https://via.placeholder.com/49x49/128C7E/ffffff?text=JS" alt="João Silva">
+                        <div class="online-status"></div>
+                    </div>
+                    <div class="contact-info">
+                        <div class="contact-name">João Silva</div>
+                        <div class="last-message">Oi! Como você está?</div>
+                    </div>
+                    <div class="contact-meta">
+                        <div class="message-time">14:30</div>
+                        <div class="message-count">2</div>
+                    </div>
+                </div>
+
+                <div class="contact-item" data-contact="Maria Santos">
+                    <div class="contact-avatar">
+                        <img src="https://via.placeholder.com/49x49/075E54/ffffff?text=MS" alt="Maria Santos">
+                    </div>
+                    <div class="contact-info">
+                        <div class="contact-name">Maria Santos</div>
+                        <div class="last-message">Vamos marcar algo para hoje?</div>
+                    </div>
+                    <div class="contact-meta">
+                        <div class="message-time">13:45</div>
+                    </div>
+                </div>
+
+                <div class="contact-item" data-contact="Pedro Costa">
+                    <div class="contact-avatar">
+                        <img src="https://via.placeholder.com/49x49/128C7E/ffffff?text=PC" alt="Pedro Costa">
+                        <div class="online-status"></div>
+                    </div>
+                    <div class="contact-info">
+                        <div class="contact-name">Pedro Costa</div>
+                        <div class="last-message">Enviou uma foto</div>
+                    </div>
+                    <div class="contact-meta">
+                        <div class="message-time">12:20</div>
+                    </div>
+                </div>
+
+                <div class="contact-item" data-contact="Ana Oliveira">
+                    <div class="contact-avatar">
+                        <img src="https://via.placeholder.com/49x49/075E54/ffffff?text=AO" alt="Ana Oliveira">
+                    </div>
+                    <div class="contact-info">
+                        <div class="contact-name">Ana Oliveira</div>
+                        <div class="last-message">Obrigada pela ajuda!</div>
+                    </div>
+                    <div class="contact-meta">
+                        <div class="message-time">Ontem</div>
+                        <div class="message-status"><i class="fas fa-check-double"></i></div>
+                    </div>
+                </div>
+
+                <div class="contact-item" data-contact="Carlos Lima">
+                    <div class="contact-avatar">
+                        <img src="https://via.placeholder.com/49x49/128C7E/ffffff?text=CL" alt="Carlos Lima">
+                    </div>
+                    <div class="contact-info">
+                        <div class="contact-name">Carlos Lima</div>
+                        <div class="last-message">Enviou um documento</div>
+                    </div>
+                    <div class="contact-meta">
+                        <div class="message-time">Ontem</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Área de Chat -->
+        <div class="chat-area">
+            <!-- Header do Chat -->
+            <div class="chat-header">
+                <div class="chat-contact-info">
+                    <div class="contact-avatar">
+                        <img src="https://via.placeholder.com/40x40/128C7E/ffffff?text=JS" alt="João Silva">
+                        <div class="online-status"></div>
+                    </div>
+                    <div class="contact-details">
+                        <div class="contact-name">João Silva</div>
+                        <div class="contact-status">online</div>
+                    </div>
+                </div>
+                <div class="chat-actions">
+                    <button class="action-btn"><i class="fas fa-search"></i></button>
+                    <button class="action-btn"><i class="fas fa-ellipsis-v"></i></button>
+                </div>
+            </div>
+
+            <!-- Área de Mensagens -->
+            <div class="messages-container">
+                <div class="message-date">Hoje</div>
+                
+                <div class="message received">
+                    <div class="message-content">
+                        <div class="message-text">Oi! Como você está?</div>
+                        <div class="message-time">14:30</div>
+                    </div>
+                </div>
+
+                <div class="message sent">
+                    <div class="message-content">
+                        <div class="message-text">Oi João! Tudo bem sim, e você?</div>
+                        <div class="message-time">14:32</div>
+                        <div class="message-status"><i class="fas fa-check-double"></i></div>
+                    </div>
+                </div>
+
+                <div class="message received">
+                    <div class="message-content">
+                        <div class="message-text">Tudo ótimo! Queria saber se você tem tempo para conversarmos sobre aquele projeto?</div>
+                        <div class="message-time">14:33</div>
+                    </div>
+                </div>
+
+                <div class="message sent">
+                    <div class="message-content">
+                        <div class="message-text">Claro! Tenho tempo sim. Que projeto você tem em mente?</div>
+                        <div class="message-time">14:35</div>
+                        <div class="message-status"><i class="fas fa-check-double"></i></div>
+                    </div>
+                </div>
+
+                <div class="message received">
+                    <div class="message-content">
+                        <div class="message-text">É sobre um site que preciso desenvolver. Posso te explicar melhor?</div>
+                        <div class="message-time">14:36</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Área de Input -->
+            <div class="input-area">
+                <div class="input-container">
+                    <button class="emoji-btn"><i class="far fa-smile"></i></button>
+                    <button class="attach-btn"><i class="fas fa-paperclip"></i></button>
+                    <div class="message-input-wrapper">
+                        <input type="text" placeholder="Digite uma mensagem" class="message-input">
+                    </div>
+                    <button class="voice-btn"><i class="fas fa-microphone"></i></button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
